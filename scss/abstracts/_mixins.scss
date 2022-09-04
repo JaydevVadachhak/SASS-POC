@@ -1,0 +1,68 @@
+// @use "sass:meta";
+
+@mixin button(
+	$width: 160px,
+	$background-color: $secondary-color-dark,
+	$text-color: $color-black,
+	$is-border-radius: true
+) {
+	display: block;
+	background-color: $background-color;
+	color: $text-color;
+	cursor: pointer;
+	width: $width / $base-font-size * 1% or $width;
+	text-align: center;
+	padding: 1rem;
+	transition: all 0.2s;
+	text-decoration: none;
+	border: none;
+
+	@if $is-border-radius {
+		border-radius: $border-radius;
+	}
+
+	&:hover {
+		background-color: darken($background-color, 15%);
+		transform: scale(1.05);
+		color: lighten($text-color, 100%);
+		font-weight: bold;
+	}
+}
+
+@mixin inline-animation($duration) {
+	$name: inline-#{unique-id()};
+
+	@keyframes #{$name} {
+		@content;
+	}
+
+	animation-name: $name;
+	animation-duration: $duration;
+	animation-iteration-count: infinite;
+}
+
+@mixin inline-text-colors($args...) {
+	@each $name, $color in keywords($args) {
+		span.stx-#{$name} {
+			color: $color;
+			font-size: 1.2rem;
+			font-weight: map-get($base-font-bold, "extra-bolder");
+		}
+	}
+}
+
+// @mixin prefix($property, $value, $prefixes) {
+// 	@each $prefix in $prefixes {
+// 		-#{$prefix}-#{$property}: $value;
+// 	}
+// 	#{$property}: $value;
+// }
+
+@mixin border($sides, $weight: 1px, $type: solid, $color: $primary-color) {
+	@each $side in $sides {
+		@if not index($known-sides, $side) {
+			@error "Unknown side #{$side}.";
+		}
+		border-#{$side}: $weight $type $color;
+	}
+}

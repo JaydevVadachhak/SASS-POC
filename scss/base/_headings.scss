@@ -1,0 +1,15 @@
+$_count: 1;
+$_define-heading-size: 10;
+
+@while $_count < $_define-heading-size {
+    @if $is-point-grid-system {
+        .#{$project-prefix-name}-h-#{$_count} {
+            font-size: unquote($point-grid * $_count + "px");
+        }
+    } @else {
+        .#{$project-prefix-name}-h-#{$_count} {
+            font-size: $base-font-size * $_count;
+        }
+    }
+    $_count: $_count + 1;
+}

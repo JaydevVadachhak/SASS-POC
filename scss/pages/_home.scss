@@ -1,0 +1,145 @@
+//These are our app pages styles
+
+.section {
+    margin-bottom: 3rem;
+    padding: 0rem 6rem;
+}
+
+.button-1 {
+    @include button(160px, $tertiary-color-dark, $color-white, false);
+}
+
+.button-2 {
+    @include button(160px, $primary-color-dark, $color-white, false);
+}
+
+.button-3 {
+    @include button(160px, $tertiary-color-light, $color-black, false);
+}
+
+.button-4 {
+    @include button(160px, $secondary-color-light, $color-black, false);
+}
+
+code {
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace, monospace;
+    line-height: 1.8rem;
+}
+
+.pulse-1 {
+    @include inline-animation(2s) {
+        from {
+            background-color: $secondary-color-dark;
+        }
+        to {
+            background-color: $primary-color-dark;
+        }
+    }
+}
+
+.pulse-2 {
+    @include inline-animation(1.5s) {
+        from {
+            background-color: $secondary-color-light;
+        }
+        to {
+            background-color: $tertiary-color-dark;
+        }
+    }
+}
+
+.tool-belt-1 {
+    @extend %tool-belt;
+    color: #4285f4;
+}
+
+.tool-belt-2 {
+    @extend %tool-belt;
+    color: #567877;
+}
+
+.inline-text-colors {
+    @include inline-text-colors($success: $color-success, $warning: $color-danger, $highlight: $tertiary-color-light);
+}
+
+.block {
+    @include border(top left, 2px, solid, $secondary-color-dark);
+}
+
+.invert-block-1 {
+    background-color: $primary-color;
+    &:hover {
+        background-color: invert($primary-color, 60%);
+    }
+}
+
+.invert-block-2 {
+    background-color: $primary-color;
+    &:hover {
+        background-color: invert($primary-color, 30%);
+    }
+}
+
+.invert-block-3 {
+    background-color: $primary-color;
+    &:hover {
+        background-color: invert($primary-color, 10%);
+    }
+}
+
+.code-block {
+    box-shadow: $base-box-shadow;
+    border-radius: $border-radius;
+}
+
+.border-1 {
+    @include border(top left bottom right, 2px);
+}
+
+.border-2 {
+    @include border(top, 2px, solid, $secondary-color-dark);
+}
+
+.border-3 {
+    @include border(left right, 3px, dashed, $tertiary-color-dark);
+}
+
+.myclass {
+    background-color: $primary-color;
+    height: 100px;
+    width: 100px;
+    transition: 0.3s ease;
+
+    @at-root {
+        @keyframes fade {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.5);
+            }
+        }
+    }
+    &:hover {
+        animation: fade 5s infinite;
+    }
+}
+
+.table-primary {
+    table {
+        font-family: $base-font-family;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        @include border(top right bottom left, 1px, solid, $table-border-color);
+        text-align: left;
+        padding: 8px;
+    }
+
+    // tr:nth-child(even) {
+    //     background-color: $table-border-color;
+    // }
+}

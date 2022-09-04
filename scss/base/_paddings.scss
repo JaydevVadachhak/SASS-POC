@@ -1,0 +1,64 @@
+/* Paddings */
+@for $i from 0 through $multiplier {
+    @if $is-point-grid-system {
+        .#{$project-prefix-name}-p-#{$i} {
+            padding: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-pt-#{$i} {
+            padding-top: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-pr-#{$i} {
+            padding-right: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-pb-#{$i} {
+            padding-bottom: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-pl-#{$i} {
+            padding-left: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-py-#{$i} {
+            padding-top: $point-grid * $i + px;
+            padding-bottom: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-px-#{$i} {
+            padding-left: $point-grid * $i + px;
+            padding-right: $point-grid * $i + px;
+        }
+    } @else if $is-point-grid-system != true {
+        .#{$project-prefix-name}-p-#{$i} {
+            padding: $i + rem;
+        }
+
+        .#{$project-prefix-name}-pt-#{$i} {
+            padding-top: $i + rem;
+        }
+
+        .#{$project-prefix-name}-pr-#{$i} {
+            padding-right: $i + rem;
+        }
+
+        .#{$project-prefix-name}-pb-#{$i} {
+            padding-bottom: $i + rem;
+        }
+
+        .#{$project-prefix-name}-pl-#{$i} {
+            padding-left: $i + rem;
+        }
+
+        .#{$project-prefix-name}-py-#{$i} {
+            padding-top: $i + rem;
+            padding-bottom: $i + rem;
+        }
+
+        .#{$project-prefix-name}-px-#{$i} {
+            padding-left: $i + rem;
+            padding-right: $i + rem;
+        }
+    }
+}

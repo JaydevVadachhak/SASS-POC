@@ -1,0 +1,64 @@
+/* Margins */
+@for $i from 0 through $multiplier {
+    @if $is-point-grid-system {
+        .#{$project-prefix-name}-m-#{$i} {
+            margin: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-mt-#{$i} {
+            margin-top: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-mr-#{$i} {
+            margin-right: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-mb-#{$i} {
+            margin-bottom: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-ml-#{$i} {
+            margin-left: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-my-#{$i} {
+            margin-top: $point-grid * $i + px;
+            margin-bottom: $point-grid * $i + px;
+        }
+
+        .#{$project-prefix-name}-mx-#{$i} {
+            margin-left: $point-grid * $i + px;
+            margin-right: $point-grid * $i + px;
+        }
+    } @else if $is-point-grid-system != true {
+        .#{$project-prefix-name}-m-#{$i} {
+            margin: $i + rem;
+        }
+
+        .#{$project-prefix-name}-mt-#{$i} {
+            margin-top: $i + rem;
+        }
+
+        .#{$project-prefix-name}-mr-#{$i} {
+            margin-right: $i + rem;
+        }
+
+        .#{$project-prefix-name}-mb-#{$i} {
+            margin-bottom: $i + rem;
+        }
+
+        .#{$project-prefix-name}-ml-#{$i} {
+            margin-left: $i + rem;
+        }
+
+        .#{$project-prefix-name}-my-#{$i} {
+            margin-top: $i + rem;
+            margin-bottom: $i + rem;
+        }
+
+        .#{$project-prefix-name}-mx-#{$i} {
+            margin-left: $i + rem;
+            margin-right: $i + rem;
+        }
+    }
+}

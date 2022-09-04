@@ -1,0 +1,91 @@
+// this comment won't be included in css file after compiling
+/* this comment will be included in css file after compiling */
+
+// Colors
+$primary-color: #55c57a;
+$primary-color-light: #7ed56f;
+$primary-color-dark: #28b485;
+$secondary-color-light: #ffb900;
+$secondary-color-dark: #ff7730;
+$tertiary-color-light: #2998ff;
+$tertiary-color-dark: #5643fa;
+$color-light-gray: #f7f7f7;
+$color-dark-gray: #777;
+$color-white: #fff;
+$color-black: #000;
+$color-success: #080;
+$color-danger: #800;
+
+$colors: (
+    "primary-color": $primary-color,
+    "primary-color-light": $primary-color-light,
+    "primary-color-dark": $primary-color-dark,
+    "secondary-color-light": $secondary-color-light,
+    "secondary-color-dark": $secondary-color-dark,
+    "tertiary-color-light": $tertiary-color-light,
+    "tertiary-color-dark": $tertiary-color-dark,
+    "color-light-gray": $color-light-gray,
+    "color-dark-gray": $color-dark-gray,
+    "color-white": $color-white,
+    "color-black": $color-black,
+    "color-success": $color-success,
+    "color-danger": $color-danger,
+);
+
+// Change Light or Dark Theme
+$is-dark-theme: false;
+@if $is-dark-theme {
+    $primary-color: $primary-color;
+    $primary-color-light: $primary-color-light;
+    $primary-color-dark: #28b485;
+    $secondary-color-light: $secondary-color-light;
+    $secondary-color-dark: #ff7730;
+    $tertiary-color-light: $tertiary-color-light;
+    $tertiary-color-dark: #5643fa;
+    $color-light-gray: $color-light-gray;
+    $color-dark-gray: #777;
+    $color-white: #fff;
+    $color-black: #000;
+    $color-success: #080;
+    $color-danger: #800;
+    $colors: (
+        "primary-color": $primary-color,
+        "primary-color-light": $primary-color-light,
+        "primary-color-dark": $primary-color-dark,
+        "secondary-color-light": $secondary-color-light,
+        "secondary-color-dark": $secondary-color-dark,
+        "tertiary-color-light": $tertiary-color-light,
+        "tertiary-color-dark": $tertiary-color-dark,
+        "color-light-gray": $color-light-gray,
+        "color-dark-gray": $color-dark-gray,
+        "color-white": $color-white,
+        "color-black": $color-black,
+        "color-success": $color-success,
+        "color-danger": $color-danger,
+    );
+}
+
+// Fonts
+$base-font-family: "Lato", sans-serif !default;
+$base-font-size: 16px !default;
+$base-font-bold: (
+    "bold": 400,
+    "semi-bold": 500,
+    "bolder": 600,
+    "semi-bolder": 700,
+    "extra-bolder": 900,
+);
+
+// Borders
+$border-radius: 5px !default;
+$known-sides: top, right, bottom, left;
+$table-border-color: #dddddd !default;
+
+// Box
+$base-box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15) !default;
+
+// Margin, Padding
+$project-prefix-name: "pg";
+$point-grid: 8;
+$multiplier: 10;
+$is-point-grid-system: false;

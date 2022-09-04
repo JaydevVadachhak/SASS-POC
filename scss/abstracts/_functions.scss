@@ -1,0 +1,10 @@
+@function invert($color, $amount: 100%) {
+    $inverse: change-color($color, $hue: hue($color) + 180);
+    @return mix($inverse, $color, $amount);
+}
+
+@function convert-to-rem($size) {
+    @if $size > 0px and $base-font-size > 0px {
+        @return $size / $base-font-size + rem;
+    }
+}
