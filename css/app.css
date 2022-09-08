@@ -16,9 +16,13 @@
     box-sizing: border-box;
 }
 */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
 body {
-  margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Lato", sans-serif; }
 
 /* Colors */
@@ -101,16 +105,16 @@ body {
   background-color: #800; }
 
 .pg-h-1 {
-  font-size: 14px; }
+  font-size: 16px; }
 
 .pg-h-2 {
-  font-size: 28px; }
+  font-size: 32px; }
 
 .pg-h-3 {
-  font-size: 42px; }
+  font-size: 48px; }
 
 .pg-h-4 {
-  font-size: 56px; }
+  font-size: 64px; }
 
 /* Margins */
 .pg-m-0 {
@@ -632,18 +636,6 @@ body {
   top: 0;
   left: 0; }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0;
-  height: 3.5rem;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  left: 0; }
-
 .section {
   margin-bottom: 3rem;
   padding: 0rem 6rem; }
@@ -653,7 +645,7 @@ body {
   background-color: #5643fa;
   color: #fff;
   cursor: pointer;
-  width: 11.42857%;
+  width: 10%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
@@ -670,7 +662,7 @@ body {
   background-color: #28b485;
   color: #fff;
   cursor: pointer;
-  width: 11.42857%;
+  width: 10%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
@@ -687,7 +679,7 @@ body {
   background-color: #2998ff;
   color: #000;
   cursor: pointer;
-  width: 11.42857%;
+  width: 10%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
@@ -704,7 +696,7 @@ body {
   background-color: #ffb900;
   color: #000;
   cursor: pointer;
-  width: 11.42857%;
+  width: 10%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
@@ -721,22 +713,22 @@ code {
   line-height: 1.8rem; }
 
 .pulse-1 {
-  animation-name: inline-uf001a149;
+  animation-name: inline-u6521e5fa;
   animation-duration: 2s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-uf001a149 {
+@keyframes inline-u6521e5fa {
   from {
     background-color: #ff7730; }
   to {
     background-color: #28b485; } }
 
 .pulse-2 {
-  animation-name: inline-u9e29616d;
+  animation-name: inline-uc5730d9d;
   animation-duration: 1.5s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-u9e29616d {
+@keyframes inline-uc5730d9d {
   from {
     background-color: #ffb900; }
   to {

@@ -51,13 +51,6 @@
 	}
 }
 
-// @mixin prefix($property, $value, $prefixes) {
-// 	@each $prefix in $prefixes {
-// 		-#{$prefix}-#{$property}: $value;
-// 	}
-// 	#{$property}: $value;
-// }
-
 @mixin border($sides, $weight: 1px, $type: solid, $color: $primary-color) {
 	@each $side in $sides {
 		@if not index($known-sides, $side) {
