@@ -632,6 +632,18 @@ body {
   top: 0;
   left: 0; }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  height: 3.5rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  left: 0; }
+
 .section {
   margin-bottom: 3rem;
   padding: 0rem 6rem; }
@@ -709,22 +721,22 @@ code {
   line-height: 1.8rem; }
 
 .pulse-1 {
-  animation-name: inline-udf7c9033;
+  animation-name: inline-uf001a149;
   animation-duration: 2s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-udf7c9033 {
+@keyframes inline-uf001a149 {
   from {
     background-color: #ff7730; }
   to {
     background-color: #28b485; } }
 
 .pulse-2 {
-  animation-name: inline-u5dcf1bbb;
+  animation-name: inline-u9e29616d;
   animation-duration: 1.5s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-u5dcf1bbb {
+@keyframes inline-u9e29616d {
   from {
     background-color: #ffb900; }
   to {
