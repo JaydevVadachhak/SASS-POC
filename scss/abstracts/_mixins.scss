@@ -66,3 +66,23 @@
 		border-#{$side}: $weight $type $color;
 	}
 }
+
+@mixin flex($direction, $align-items, $justify-content, $gap) {
+	display: flex;
+	@if not index($known-flex-directions, $direction) {
+		@error "Unknown Word #{$direction}.";
+	} @else {
+		flex-direction: $direction;
+	}
+	@if not index($known-align-items, $align-items) {
+		@error "Unknown Word #{$align-items}.";
+	} @else {
+		align-items: $align-items;
+	}
+	@if not index($known-justify-contents, $justify-content) {
+		@error "Unknown Word #{$justify-content}.";
+	} @else {
+		justify-content: $justify-content;
+	}
+	gap: $gap;
+}

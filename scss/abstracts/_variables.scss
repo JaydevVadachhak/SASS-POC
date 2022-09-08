@@ -67,7 +67,7 @@ $is-dark-theme: false;
 
 // Fonts
 $base-font-family: "Lato", sans-serif !default;
-$base-font-size: 16px !default;
+$base-font-size: 14px !default;
 $base-font-bold: (
     "bold": 400,
     "semi-bold": 500,
@@ -89,3 +89,8 @@ $project-prefix-name: "pg";
 $point-grid: 8;
 $multiplier: 10;
 $is-point-grid-system: false;
+
+// FlexBox
+$known-flex-directions: column, row, row-reverse, column-reverse;
+$known-align-items: flex-start, flex-end, stretch, center, baseline;
+$known-justify-contents: flex-start, flex-end, center, space-around, space-between, space-evenly;
