@@ -17,9 +17,9 @@
   <header class="header bg-primary-color-dark pg-px-1">
     <h2 class="header-title text-color-white">SASS-POC</h2>
   </header>
-  <div id="colors" class="section">
+  <div id="colors" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Colors & Background (Defined Variables in SASS)</h2>
-    <div>
+    <div class="pg-my-1">
       <ul>
         <li class="text-primary-color">Primary Color</li>
         <li class="text-primary-color-light">Primary Color Light</li>
@@ -30,7 +30,7 @@
         <li class="text-tertiary-color-dark">Tertiary Color Dark</li>
       </ul>
     </div>
-    <div>
+    <div class="pg-my-1">
       <div class="bg-primary-color pg-p-1">Primary Color</div>
       <div class="bg-primary-color-light pg-p-1">Primary Color Light</div>
       <div class="bg-primary-color-dark pg-p-1">Primary Color Dark</div>
@@ -40,9 +40,9 @@
       <div class="bg-tertiary-color-dark pg-p-1">Tertiary Color Dark</div>
     </div>
   </div>
-  <div id="nesting" class="section">
+  <div id="nesting" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Nesting (Selector)</h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-primary-color">/* In SASS */</span>
@@ -97,9 +97,9 @@
       </pre>
     </div>
   </div>
-  <div id="reusability" class="section">
+  <div id="reusability" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Reusability (@mixin & @include) </h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-primary-color">/* In SASS - Define Mixin with Default Arguments */</span>
@@ -151,9 +151,9 @@
       <a href="#" class="button-4">Button</a>
     </div>
   </div>
-  <div id="scopes" class="section">
+  <div id="scopes" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Scope of Variable (Local, Global, Flow Control Scope) </h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-secondary-color-light">$variable:</span> global value;
@@ -175,9 +175,9 @@
       </pre>
     </div>
   </div>
-  <div id="mixin" class="section">
+  <div id="mixin" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* @mixin with @content [unique-id()] </h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-secondary-color-light">@mixin</span> inline-animation($duration) {
@@ -222,9 +222,9 @@
       </div>
     </div>
   </div>
-  <div id="placeholder" class="section">
+  <div id="placeholder" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* %placeholder and @extend (DRY) </h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-primary-color">/* Block of Code that defined using %placeholder can reusable using @extend
@@ -264,9 +264,9 @@
       iste?
     </div>
   </div>
-  <div id="mixin_arguments" class="section">
+  <div id="mixin_arguments" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* @mixin with Arbitrary Arguments & meta.keywords() & map.get()</h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-primary-color">/* meta.Keywords() return list that can be iterable */</span>
@@ -298,9 +298,9 @@
         totam repellat itaque temporibus error a?</span>
     </div>
   </div>
-  <div id="padding_margin" class="section">
+  <div id="padding_margin" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Padding & margin utilities (@for, @if..@else if)</h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-primary-color">/* SASS */</span>
@@ -343,9 +343,9 @@
       <div class="pg-p-3 pg-m-3 block">Padding - Margin - 3</div>
     </div>
   </div>
-  <div id="functions" class="section">
+  <div id="functions" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Functions </h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-secondary-color-light">@function</span> invert($color, $amount: 100%) {
@@ -375,7 +375,7 @@
       <div class="invert-block-2 pg-p-1">Invert (Hover to see the changes) </div>
       <div class="invert-block-3 pg-p-1">Invert (Hover to see the changes) </div>
     </div>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-secondary-color-light">@function</span> convert-into-rem($size) {
@@ -392,9 +392,9 @@
       </pre>
     </div>
   </div>
-  <div id="string_interpolation" class="section">
+  <div id="string_interpolation" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* String Interpolation [#{ }]</h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-secondary-color-light">@mixin</span> border($sides, $weight: 1px, $type: solid, $color: $primary-color) {
@@ -423,9 +423,9 @@
       <div class="border-3 pg-p-1 pg-mb-1">border-3</div>
     </div>
   </div>
-  <div id="debug_rules" class="section">
+  <div id="debug_rules" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* @error, @warn, @debug rule</h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-primary-color-light">/* @error rule stop the compliling and give an error */</span>
@@ -449,9 +449,9 @@
       </pre>
     </div>
   </div>
-  <div id="while" class="section">
+  <div id="while" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* @while & [string.unquote()]</h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-primary-color-light">/* Variable defined using (_) or (-) are private Variables */</span>
@@ -479,12 +479,11 @@
       <div class="pg-h-2">pg-h-2</div>
       <div class="pg-h-3">pg-h-3</div>
       <div class="pg-h-4">pg-h-4</div>
-      <div class="pg-h-5">pg-h-5</div>
     </div>
   </div>
-  <div id="at_rule" class="section">
+  <div id="at_rule" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* @at-root rule</h2>
-    <div class="bg-color-black text-color-light-gray code-block">
+    <div class="bg-color-black text-color-light-gray code-block pg-my-2">
       <pre>
         <code>
           <span class="text-secondary-color-light">.myclass</span> {
@@ -518,7 +517,7 @@
       Keep cursor here....
     </div>
   </div>
-  <div id="math_library" class="section">
+  <div id="math_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Numbers & Math Library in SASS</h2>
     <div class="table-primary">
       <table class="">
@@ -555,7 +554,7 @@
       </table>
     </div>
   </div>
-  <div id="string_library" class="section">
+  <div id="string_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Strings Library in SASS</h2>
     <div class="table-primary">
       <table class="">
@@ -600,7 +599,7 @@
       </table>
     </div>
   </div>
-  <div id="color_library" class="section">
+  <div id="color_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Color Library in SASS</h2>
     <div class="table-primary">
       <table class="">
@@ -645,7 +644,7 @@
       </table>
     </div>
   </div>
-  <div id="list_library" class="section">
+  <div id="list_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Lists Library in SASS</h2>
     <div class="table-primary">
       <table class="">
@@ -690,7 +689,7 @@
       </table>
     </div>
   </div>
-  <div id="map_library" class="section">
+  <div id="map_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Map Library in SASS</h2>
     <div class="table-primary">
       <table class="">
@@ -739,7 +738,7 @@
       </table>
     </div>
   </div>
-  <div id="operator" class="section">
+  <div id="operator" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Logical Operator & Relational Operator / if() function</h2>
     <div class="table-primary">
       <table class="">
