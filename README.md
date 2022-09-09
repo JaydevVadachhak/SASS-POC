@@ -1,5 +1,6 @@
 # SASS - POC
 
+## Basic Setup
 ### Node Package Manager
 
 ```bash
@@ -8,44 +9,36 @@
 $npm init
 ```
 
-### Gulp CLI Installation (Globally)
+### Install node-sass
 
 ```bash
-$npm install -g gulp-cli
+$npm install node-sass
 ```
 
-### Gulp Installation (Locally)
+### Install Sass
 
 ```bash
-$npm install gulp
-$npm install gulp-sass
 $npm install sass
-
-or
-
-$npm install gulp gulp-sass sass --save-dev
 ```
 
-### gulpfile Setup
+### Custom Command to Watch and Compile SCSS Files
 
-```javascript
-const { src, dest, watch, series } = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
-
-function buildStyles() {
-  // dest() -> Write your .css dest folder here
-  return src(`*.scss`).pipe(sass()).pipe(dest(`styles`));
+```js
+/* In Package.json -> Inside Scripts -> add this line of code*/
+{
+    "scripts": {
+        ...
+        "scss": "node-sass --watch scss/app.scss -o css" 
+        /*
+            1.Where app.scss -> main files with all imports of *.scss
+            2. Where css -> Destination folder for all compiled SASS  code into css 
+        */
+     },
 }
-
-function watchTask() {
-  watch([`*.scss`], buildStyles);
-}
-
-exports.default = series(buildStyles, watchTask);
 ```
 
 ### Run Gulp
 
 ```bash
-$gulp
+$npm run scss
 ```
