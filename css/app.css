@@ -714,22 +714,22 @@ code {
   line-height: 1.8rem; }
 
 .pulse-1 {
-  animation-name: inline-u4a4c71d5;
+  animation-name: inline-u9a7200f8;
   animation-duration: 2s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-u4a4c71d5 {
+@keyframes inline-u9a7200f8 {
   from {
     background-color: #ff7730; }
   to {
     background-color: #28b485; } }
 
 .pulse-2 {
-  animation-name: inline-ub8d2969a;
+  animation-name: inline-u6ac0058a;
   animation-duration: 1.5s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-ub8d2969a {
+@keyframes inline-u6ac0058a {
   from {
     background-color: #ffb900; }
   to {
