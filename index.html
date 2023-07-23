@@ -19,7 +19,7 @@
   </header>
   <div id="colors" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Colors & Background (Defined Variables in SASS)</h2>
-    <div class="pg-my-1">
+    <div class="pg-my-1 pg-px-1">
       <ul>
         <li class="text-primary-color">Primary Color</li>
         <li class="text-primary-color-light">Primary Color Light</li>
@@ -105,7 +105,7 @@
           <span class="text-primary-color">/* In SASS - Define Mixin with Default Arguments */</span>
           <span class="text-primary-color">/* hyphen(-) & underscore(_) are identical */</span>
           <span class="text-secondary-color-light">@mixin</span> button(
-            $width: 160px, 
+            $width: 50%, 
             $background-color: $secondary-color-dark, 
             $text-color: $color-black, 
             $is-border-radius: true
@@ -134,12 +134,16 @@
 
           <span class="text-primary-color">/* Use Mixin */</span>
           .button-1 {
-            <span class="text-secondary-color-light">@include</span> button(160px, $tertiary-color-dark, $color-white, false);
+            <span class="text-secondary-color-light">@include</span> button(50%, $tertiary-color-dark, $color-white, false);
           }
 
           .button-2 {
             <span class="text-primary-color">/* When we do not pass arguments, it will take default one as like in any other languages */</span>
             <span class="text-secondary-color-light">@include</span> button();
+          }
+
+          .button-3 {
+            <span class="text-secondary-color-light">@include</span> button(40%, $tertiary-color-light, $color-black, false);
           }
         </code>
       </pre>
@@ -148,7 +152,6 @@
       <a href="#" class="button-1">Button</a>
       <a href="#" class="button-2">Button</a>
       <a href="#" class="button-3">Button</a>
-      <a href="#" class="button-4">Button</a>
     </div>
   </div>
   <div id="scopes" class="section pg-mt-2">
@@ -517,9 +520,9 @@
       Keep cursor here....
     </div>
   </div>
-  <div id="math_library" class="section pg-mt-2">
+  <!-- <div id="math_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Numbers & Math Library in SASS</h2>
-    <div class="table-primary">
+    <div class="table-primary pg-mt-2 pg-px-1">
       <table class="">
         <thead>
           <th>Function or Rule</th>
@@ -556,7 +559,7 @@
   </div>
   <div id="string_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Strings Library in SASS</h2>
-    <div class="table-primary">
+    <div class="table-primary pg-mt-2 pg-px-1">
       <table class="">
         <thead>
           <th>Function or Rule</th>
@@ -601,7 +604,7 @@
   </div>
   <div id="color_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Color Library in SASS</h2>
-    <div class="table-primary">
+    <div class="table-primary pg-mt-2 pg-px-1">
       <table class="">
         <thead>
           <th>Function or Rule</th>
@@ -646,7 +649,7 @@
   </div>
   <div id="list_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Lists Library in SASS</h2>
-    <div class="table-primary">
+    <div class="table-primary pg-mt-2 pg-px-1">
       <table class="">
         <thead>
           <th>Function or Rule</th>
@@ -691,7 +694,7 @@
   </div>
   <div id="map_library" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Map Library in SASS</h2>
-    <div class="table-primary">
+    <div class="table-primary pg-mt-2 pg-px-1">
       <table class="">
         <thead>
           <th>Function or Rule</th>
@@ -740,7 +743,7 @@
   </div>
   <div id="operator" class="section pg-mt-2">
     <h2 class="text-primary-color-dark">* Logical Operator & Relational Operator / if() function</h2>
-    <div class="table-primary">
+    <div class="table-primary pg-mt-2 pg-px-1">
       <table class="">
         <thead>
           <th>Function or Rule</th>
@@ -826,7 +829,7 @@
         </tbody>
       </table>
     </div>
-  </div>
+  </div> -->
 </body>
 
 </html>

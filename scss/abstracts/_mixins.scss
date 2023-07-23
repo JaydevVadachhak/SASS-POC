@@ -1,7 +1,7 @@
 // @use "sass:meta";
 
 @mixin button(
-	$width: 160px,
+	$width: 50%,
 	$background-color: $secondary-color-dark,
 	$text-color: $color-black,
 	$is-border-radius: true
@@ -10,7 +10,7 @@
 	background-color: $background-color;
 	color: $text-color;
 	cursor: pointer;
-	width: $width / $base-font-size * 1% or $width;
+	width: $width;
 	text-align: center;
 	padding: 1rem;
 	transition: all 0.2s;

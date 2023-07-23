@@ -29,7 +29,7 @@ $colors: (
     "color-white": $color-white,
     "color-black": $color-black,
     "color-success": $color-success,
-    "color-danger": $color-danger,
+    "color-danger": $color-danger
 );
 
 // Change Light or Dark Theme
@@ -61,7 +61,7 @@ $is-dark-theme: false;
         "color-white": $color-white,
         "color-black": $color-black,
         "color-success": $color-success,
-        "color-danger": $color-danger,
+        "color-danger": $color-danger
     );
 }
 
@@ -73,7 +73,7 @@ $base-font-bold: (
     "semi-bold": 500,
     "bolder": 600,
     "semi-bolder": 700,
-    "extra-bolder": 900,
+    "extra-bolder": 900
 );
 
 // Borders
