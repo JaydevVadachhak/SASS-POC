@@ -708,22 +708,22 @@ code {
   line-height: 1.8rem; }
 
 .pulse-1 {
-  animation-name: inline-udf88a8d6;
+  animation-name: inline-u12034023;
   animation-duration: 2s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-udf88a8d6 {
+@keyframes inline-u12034023 {
   from {
     background-color: #ff7730; }
   to {
     background-color: #28b485; } }
 
 .pulse-2 {
-  animation-name: inline-u65467864;
+  animation-name: inline-udbf14fe6;
   animation-duration: 1.5s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-u65467864 {
+@keyframes inline-udbf14fe6 {
   from {
     background-color: #ffb900; }
   to {
