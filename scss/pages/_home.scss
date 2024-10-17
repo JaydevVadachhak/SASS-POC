@@ -2,23 +2,23 @@
 
 .section {
     margin-bottom: 3rem;
-    padding: 0rem 6rem;
+    padding: 0rem 2rem;
 }
 
 .button-1 {
-    @include button(160px, $tertiary-color-dark, $color-white, false);
+    @include button(50%, $tertiary-color-dark, $color-white, false);
 }
 
 .button-2 {
-    @include button(160px, $primary-color-dark, $color-white, false);
+    @include button();
 }
 
 .button-3 {
-    @include button(160px, $tertiary-color-light, $color-black, false);
+    @include button(40%, $tertiary-color-light, $color-black, false);
 }
 
 .button-4 {
-    @include button(160px, $secondary-color-light, $color-black, false);
+    @include button(35%, $secondary-color-light, $color-black, false);
 }
 
 code {
@@ -142,4 +142,13 @@ code {
     // tr:nth-child(even) {
     //     background-color: $table-border-color;
     // }
+}
+
+@media (max-width: 1000px) {
+    pre {
+        overflow: scroll;
+    }
+
+    code {
+    }
 }

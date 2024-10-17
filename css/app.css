@@ -7,18 +7,11 @@
   .tool-belt-1:hover, .tool-belt-2:hover {
     border: 2px rgba(0, 0, 0, 0.5) solid; }
 
-/*
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*/
-* {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box; }
 
 body {
@@ -639,14 +632,14 @@ body {
 
 .section {
   margin-bottom: 3rem;
-  padding: 0rem 6rem; }
+  padding: 0rem 2rem; }
 
 .button-1 {
   display: block;
   background-color: #5643fa;
   color: #fff;
   cursor: pointer;
-  width: 10%;
+  width: 50%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
@@ -660,17 +653,18 @@ body {
 
 .button-2 {
   display: block;
-  background-color: #28b485;
-  color: #fff;
+  background-color: #ff7730;
+  color: #000;
   cursor: pointer;
-  width: 10%;
+  width: 50%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
   text-decoration: none;
-  border: none; }
+  border: none;
+  border-radius: 5px; }
   .button-2:hover {
-    background-color: #1a7557;
+    background-color: #e34e00;
     transform: scale(1.05);
     color: white;
     font-weight: bold; }
@@ -680,7 +674,7 @@ body {
   background-color: #2998ff;
   color: #000;
   cursor: pointer;
-  width: 10%;
+  width: 40%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
@@ -697,7 +691,7 @@ body {
   background-color: #ffb900;
   color: #000;
   cursor: pointer;
-  width: 10%;
+  width: 35%;
   text-align: center;
   padding: 1rem;
   transition: all 0.2s;
@@ -714,22 +708,22 @@ code {
   line-height: 1.8rem; }
 
 .pulse-1 {
-  animation-name: inline-u9a7200f8;
+  animation-name: inline-u12034023;
   animation-duration: 2s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-u9a7200f8 {
+@keyframes inline-u12034023 {
   from {
     background-color: #ff7730; }
   to {
     background-color: #28b485; } }
 
 .pulse-2 {
-  animation-name: inline-u6ac0058a;
+  animation-name: inline-udbf14fe6;
   animation-duration: 1.5s;
   animation-iteration-count: infinite; }
 
-@keyframes inline-u6ac0058a {
+@keyframes inline-udbf14fe6 {
   from {
     background-color: #ffb900; }
   to {
@@ -819,3 +813,7 @@ code {
   border-left: 1px solid #dddddd;
   text-align: left;
   padding: 8px; }
+
+@media (max-width: 1000px) {
+  pre {
+    overflow: scroll; } }
