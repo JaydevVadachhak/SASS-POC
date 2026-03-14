@@ -1,6 +1,8 @@
+@use "../abstracts/mixins";
+
 // Page Header
 .header {
-    @include flex(row, center, space-between, 0);
+    @include mixins.flex(row, center, space-between, 0);
     height: 3.5rem;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     position: sticky;

@@ -17,6 +17,38 @@ $color-success: #080;
 $color-danger: #800;
 
 $colors: (
+  "primary-color": $primary-color,
+  "primary-color-light": $primary-color-light,
+  "primary-color-dark": $primary-color-dark,
+  "secondary-color-light": $secondary-color-light,
+  "secondary-color-dark": $secondary-color-dark,
+  "tertiary-color-light": $tertiary-color-light,
+  "tertiary-color-dark": $tertiary-color-dark,
+  "color-light-gray": $color-light-gray,
+  "color-dark-gray": $color-dark-gray,
+  "color-white": $color-white,
+  "color-black": $color-black,
+  "color-success": $color-success,
+  "color-danger": $color-danger,
+);
+
+// Change Light or Dark Theme
+$is-dark-theme: false;
+@if $is-dark-theme {
+  $primary-color: $primary-color;
+  $primary-color-light: $primary-color-light;
+  $primary-color-dark: #28b485;
+  $secondary-color-light: $secondary-color-light;
+  $secondary-color-dark: #ff7730;
+  $tertiary-color-light: $tertiary-color-light;
+  $tertiary-color-dark: #5643fa;
+  $color-light-gray: $color-light-gray;
+  $color-dark-gray: #777;
+  $color-white: #fff;
+  $color-black: #000;
+  $color-success: #080;
+  $color-danger: #800;
+  $colors: (
     "primary-color": $primary-color,
     "primary-color-light": $primary-color-light,
     "primary-color-dark": $primary-color-dark,
@@ -29,51 +61,19 @@ $colors: (
     "color-white": $color-white,
     "color-black": $color-black,
     "color-success": $color-success,
-    "color-danger": $color-danger
-);
-
-// Change Light or Dark Theme
-$is-dark-theme: false;
-@if $is-dark-theme {
-    $primary-color: $primary-color;
-    $primary-color-light: $primary-color-light;
-    $primary-color-dark: #28b485;
-    $secondary-color-light: $secondary-color-light;
-    $secondary-color-dark: #ff7730;
-    $tertiary-color-light: $tertiary-color-light;
-    $tertiary-color-dark: #5643fa;
-    $color-light-gray: $color-light-gray;
-    $color-dark-gray: #777;
-    $color-white: #fff;
-    $color-black: #000;
-    $color-success: #080;
-    $color-danger: #800;
-    $colors: (
-        "primary-color": $primary-color,
-        "primary-color-light": $primary-color-light,
-        "primary-color-dark": $primary-color-dark,
-        "secondary-color-light": $secondary-color-light,
-        "secondary-color-dark": $secondary-color-dark,
-        "tertiary-color-light": $tertiary-color-light,
-        "tertiary-color-dark": $tertiary-color-dark,
-        "color-light-gray": $color-light-gray,
-        "color-dark-gray": $color-dark-gray,
-        "color-white": $color-white,
-        "color-black": $color-black,
-        "color-success": $color-success,
-        "color-danger": $color-danger
-    );
+    "color-danger": $color-danger,
+  );
 }
 
 // Fonts
 $base-font-family: "Lato", sans-serif !default;
 $base-font-size: 16px !default;
 $base-font-bold: (
-    "bold": 400,
-    "semi-bold": 500,
-    "bolder": 600,
-    "semi-bolder": 700,
-    "extra-bolder": 900
+  "bold": 400,
+  "semi-bold": 500,
+  "bolder": 600,
+  "semi-bolder": 700,
+  "extra-bolder": 900,
 );
 
 // Borders
@@ -93,4 +93,5 @@ $is-point-grid-system: false;
 // FlexBox
 $known-flex-directions: column, row, row-reverse, column-reverse;
 $known-align-items: flex-start, flex-end, stretch, center, baseline;
-$known-justify-contents: flex-start, flex-end, center, space-around, space-between, space-evenly;
+$known-justify-contents:
+  flex-start, flex-end, center, space-around, space-between, space-evenly;

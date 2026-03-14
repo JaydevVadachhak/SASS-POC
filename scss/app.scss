@@ -1,18 +1,18 @@
 // Abstracts
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
-@import "./abstracts/placeholder";
-@import "./abstracts/functions";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/placeholder";
+@use "abstracts/functions";
 
 // Base
-@import "./base/base";
-@import "./base/colors";
-@import "./base/headings";
-@import "./base/margins";
-@import "./base/paddings";
+@use "base/base";
+@use "base/colors";
+@use "base/headings";
+@use "base/margins";
+@use "base/paddings";
 
 // Layout
-@import "./layout/header";
+@use "layout/header";
 
 // Pages
-@import "./pages/home";
+@use "pages/home";

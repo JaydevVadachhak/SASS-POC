@@ -1,9 +1,16 @@
+@use "sass:color";
+@use "sass:list";
+@use "sass:map";
+@use "sass:meta";
+@use "sass:string";
+@use "variables";
+
 // @use "sass:meta";
 
 @mixin button(
 	$width: 50%,
-	$background-color: $secondary-color-dark,
-	$text-color: $color-black,
+	$background-color: variables.$secondary-color-dark,
+	$text-color: variables.$color-black,
 	$is-border-radius: true
 ) {
 	display: block;
@@ -18,19 +25,19 @@
 	border: none;
 
 	@if $is-border-radius {
-		border-radius: $border-radius;
+		border-radius: variables.$border-radius;
 	}
 
 	&:hover {
-		background-color: darken($background-color, 15%);
+		background-color: color.adjust($background-color, $lightness: -15%);
 		transform: scale(1.05);
-		color: lighten($text-color, 100%);
+		color: color.adjust($text-color, $lightness: 100%);
 		font-weight: bold;
 	}
 }
 
 @mixin inline-animation($duration) {
-	$name: inline-#{unique-id()};
+	$name: inline-#{string.unique-id()};
 
 	@keyframes #{$name} {
 		@content;
@@ -42,18 +49,18 @@
 }
 
 @mixin inline-text-colors($args...) {
-	@each $name, $color in keywords($args) {
+	@each $name, $color in meta.keywords($args) {
 		span.stx-#{$name} {
 			color: $color;
 			font-size: 1.2rem;
-			font-weight: map-get($base-font-bold, "extra-bolder");
+			font-weight: map.get(variables.$base-font-bold, "extra-bolder");
 		}
 	}
 }
 
-@mixin border($sides, $weight: 1px, $type: solid, $color: $primary-color) {
+@mixin border($sides, $weight: 1px, $type: solid, $color: variables.$primary-color) {
 	@each $side in $sides {
-		@if not index($known-sides, $side) {
+		@if not list.index(variables.$known-sides, $side) {
 			@error "Unknown side #{$side}.";
 		}
 		border-#{$side}: $weight $type $color;
@@ -62,17 +69,17 @@
 
 @mixin flex($direction, $align-items, $justify-content, $gap) {
 	display: flex;
-	@if not index($known-flex-directions, $direction) {
+	@if not list.index(variables.$known-flex-directions, $direction) {
 		@error "Unknown Word #{$direction}.";
 	} @else {
 		flex-direction: $direction;
 	}
-	@if not index($known-align-items, $align-items) {
+	@if not list.index(variables.$known-align-items, $align-items) {
 		@error "Unknown Word #{$align-items}.";
 	} @else {
 		align-items: $align-items;
 	}
-	@if not index($known-justify-contents, $justify-content) {
+	@if not list.index(variables.$known-justify-contents, $justify-content) {
 		@error "Unknown Word #{$justify-content}.";
 	} @else {
 		justify-content: $justify-content;

@@ -1,14 +1,17 @@
+@use "sass:string";
+@use "../abstracts/variables";
+
 $_count: 1;
 $_define-heading-size: 5;
 
 @while $_count < $_define-heading-size {
-    @if $is-point-grid-system {
-        .#{$project-prefix-name}-h-#{$_count} {
-            font-size: unquote($point-grid * $_count + "px");
+    @if variables.$is-point-grid-system {
+        .#{variables.$project-prefix-name}-h-#{$_count} {
+            font-size: string.unquote(variables.$point-grid * $_count + "px");
         }
     } @else {
-        .#{$project-prefix-name}-h-#{$_count} {
-            font-size: $base-font-size * $_count;
+        .#{variables.$project-prefix-name}-h-#{$_count} {
+            font-size: variables.$base-font-size * $_count;
         }
     }
     $_count: $_count + 1;

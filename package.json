@@ -5,13 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch scss/app.scss -o css",
-    "build": "node-sass scss/app.scss -o css"
+    "scss": "sass --watch scss/app.scss:css/app.css",
+    "build": "sass scss/app.scss css/app.css"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^7.0.3",
-    "sass": "^1.54.9"
+  "devDependencies": {
+    "sass": "^1.98.0"
   }
 }

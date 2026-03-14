@@ -1,5 +1,7 @@
+@use "../abstracts/variables";
+
 /* Colors */
-@each $color, $value in $colors {
+@each $color, $value in variables.$colors {
     .text-#{$color} {
         color: $value;
     }
